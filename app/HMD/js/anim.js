@@ -9,7 +9,7 @@ var typewriter = new Typewriter(app, {
 typewriter.typeString('have you been single?')
     .pauseFor(2500)
     .deleteAll()
-    .typeString('to your birthdate?')
+    .typeString('to your birthday?')
     .pauseFor(2500)
     .deleteAll()
     .typeString('since you were born?')
