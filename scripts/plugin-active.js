@@ -17,11 +17,11 @@ $(document).ready(function() {
     $('html,body').stop().animate({ scrollTop: offset }, 200);
   });
   // Closes responsive menu when a scroll trigger link is clicked
-  $('#sidebar-wrapper').click(function() {
-    $("#sidebar-wrapper").removeClass("active");
-    $(".menu-toggle").removeClass("active");
-    $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
-  });
+  // $('#sidebar-wrapper').click(function() {
+  //   $("#sidebar-wrapper").removeClass("active");
+  //   $(".menu-toggle").removeClass("active");
+  //   $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
+  // });
   if ($(window).width() > 991) {
     $(window).on("load", function (e) {
       $("body").addClass("active");
