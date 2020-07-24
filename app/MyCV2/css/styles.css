@@ -1,0 +1,273 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.starter {
+    margin: 20px auto;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.starter h1 {
+    font-size: 70px;
+    color: black;
+}
+
+.new {
+    margin-top: 20px;
+}
+
+.form {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+input {
+    font-size: 30px;
+    height: 50px;
+    padding-left: 10px;
+    margin-top: 10px;
+    width: 70%;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+}
+
+input.langLevel {
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 2px;
+    background-color: white;
+    font-size: 30px;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2.2px solid black;
+    width: 20%;   
+    cursor: pointer;
+    transition: color 700ms ease-in-out;
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    font-weight: 300;
+    outline: none;
+}
+
+.bio {
+    font-size: 30px;
+    height: 50px;
+    padding-left: 10px;
+    width: 70%;
+    outline: none;
+    border: 1px solid gray;
+    width: 700px;
+    height: 300px;
+}
+
+.list {
+    width: 100%;
+}
+
+.btnListAdd {
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 30%;
+}
+
+.btnList {
+    margin-top: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+.cursiveSpan {
+    font-style: italic;
+    color: rgba(125, 125, 125, 0.9);
+    opacity: 0.5;
+}
+
+.prim li {
+    font-size: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-top: 0.5px solid grey;
+
+}
+
+.prim {
+    margin-top: 20px;
+}
+.empty {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid red;
+}
+
+h2 {
+    color: red;
+    margin-top: 10px;
+}
+
+.logo {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.btnDemo {
+    bottom: 10px;
+    left: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid gray;
+    position: fixed;
+    
+}
+
+.btnDemo:hover {
+    color: white;
+    background-color: gray;
+    font-weight: 300;
+    outline: none;
+}
+
+/* ---------CV-------------- */
+.cv {
+    width: 98%;
+    margin-top: 0;
+}
+
+.cv li {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.caps {
+    text-transform: capitalize;
+}
+
+.first-part {
+    padding-bottom: 20px;
+}
+
+.main-cv {
+    border-right: 1px solid gray;
+    padding-left: 35px;
+}
+
+.main-cv h3 {
+    line-height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.skills-cv ul {
+    max-width: 100%;
+}
+
+.liSkills2 {
+    margin-left: 10px;
+}
+
+.bio-cv {
+    border-top: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.bioOne{
+    line-height: 35px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.bioTwo p{
+    line-height: 35px;
+    font-size: 27px;
+    max-width: 100%;
+}
+
+.bioEx{
+    line-height: 35px;
+    font-size: 30px;
+}
+
+.bioTwo {
+    border-right: 1px solid gray;
+    max-width: 50%;
+}
+
+.last-cv {
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+.work-cv {
+    padding-left: 35px;
+    border-right: 1px solid gray;
+}
+
+.li-span {
+    font-weight: 400;
+}
+
+@media print {
+    @page { margin: 0; }
+    body { margin: 1.6cm; }
+}
+
+.endText {
+    display: inline;
+    color: rgba(117, 117, 117, 0.7);
+    font-style: italic;
+}
+
+.btnEnd {
+    color: gray;
+    margin: 15px 15px;
+    border-bottom: 1px solid gray;
+    width: 16%;
+}
+
+.btnPrint {
+    width: 10%;
+}
+
+.btnEnd:hover {
+    color: white;
+    background-color: gray;
+    font-weight: 300;
+    outline: none;
+}
+
+.hoverClass {
+    transition: color 200ms ease-in-out;
+    color: red;
+}
+/* ------------Edit--------- */
+
+.h1Edit {
+    margin: 20px auto;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    color: black;
+}

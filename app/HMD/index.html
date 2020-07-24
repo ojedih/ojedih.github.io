@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/f2dbef8b4b.js" crossorigin="anonymous"></script>
+    <script src="js/lib/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+    
+    <title>How Many Days?</title>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>How Many Days <h1 class="typewriter" id="app"></h1></h1>
+        </div>
+
+        <div class="result">
+            <h1 class="resultNum"></h1>
+
+            <div class="btn-cont">
+                <a class="btn goBack" href="#">
+                  Go Back
+                  <span class="line-1"></span>
+                  <span class="line-2"></span>
+                  <span class="line-3"></span>
+                  <span class="line-4"></span>
+                </a>
+              </div>
+        </div>
+
+        <div class="hides">
+            <div class="inputs">
+                <div class="day inp form__group field">
+                    <input type="number" class="form__field" placeholder="Day" name="day" id='day' required maxlength="10" />
+                    <label for="day" id="dayLabel" class="form__label">Day</label>
+                </div>
+                <div class="month inp form__group field">
+                    <input type="number" class="form__field" placeholder="Month" name="month" id='month' required maxlength="10" />
+                    <label for="month" id="monthLabel" class="form__label">Month</label>
+                </div>
+                <div class="year inp form__group field">
+                    <input type="number" class="form__field" placeholder="Year" name="year" id='year' required maxlength="10" />
+                    <label for="year" id="yearLabel" class="form__label">Year</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="hides2 btn-cont">
+            <a class="btn goBtn" href="#">
+              Go!
+              <span class="line-1"></span>
+              <span class="line-2"></span>
+              <span class="line-3"></span>
+              <span class="line-4"></span>
+            </a>
+        </div>
+
+        <div class="error hides">
+            <p class="errorMsg"></p>
+        </div>
+
+        <footer>
+            <h3>Made with <i class="fas fa-heart"></i> by Skite</h3>
+        </footer>
+    </div>
+
+    <div class="theme">
+        <a href="#" class="themeBtn"><i class="moon fas fa-moon"></i><i class="sun fas fa-sun"></i></a>
+        
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/anim.js"></script>
+    
+</body>
+</html>

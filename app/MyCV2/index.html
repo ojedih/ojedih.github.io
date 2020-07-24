@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/lib/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title class="title">MyCV</title>
+</head>
+<body>
+    <div class="starter">
+        <h1 class="h1Title mainH1Title">MyCV<span class="logo">by Skite.io</span></h1>
+
+        <button class="new btnEnter">Start New CV</button>
+    </div>
+
+    <h1 class="h1Edit edits h1Title">MyCV<span class="logo">by Skite.io</span></h1>
+    
+
+    <div class="form">
+        <input type="text" class="caps nameEdit name" placeholder="Your First Name">
+        <button id="btnNext" class="btnName btnEnter">Next</button>  
+
+        <input type="text" class="caps lnameEdit lname" placeholder="Your Last Name">
+        <button id="btnNext" class="btnLname btnEnter">Next</button>
+
+        <input type="number" class="age ageEdit" min="1" max="99" placeholder="Your Age">
+        <button id="btnNext" class="btnAge btnEnter">Next</button>
+
+        <input type="email" class="email emailEdit" placeholder="Your e-mail">
+        <button id="btnNext" class="btnEmail btnEnter">Next</button>
+
+        <input type="number" class="phone phoneEdit" min="1" max="999999999" placeholder="Your Phone Number">
+        <button id="btnNext" class="btnPhone btnEnter">Next</button>
+
+        <input type="text" class="caps city cityEdit" placeholder="City where you live at">
+        <button id="btnNext" class="btnCity btnEnter">Next</button>
+
+        <input type="text" class="caps country countryEdit" placeholder="Country where you live at">
+        <button id="btnNext" class="btnCountry btnEnter">Next</button>
+
+        <input type="number" class="zip zipEdit" min="1" max="999999" placeholder="Your ZIP Code">
+        <button id="btnNext" class="btnZip btnEnter">Next</button>
+
+        <textarea rows="10" cols="30" type="text" class="bio bioEdit" placeholder="Describe yourself" maxlength="1000"></textarea>
+        <button id="btnNext" class="btnBio btnEnter">Next</button>
+
+        <input type="text" class="caps skillsEdit edits skills list" placeholder="Your skills and knowledge">
+        <button id="btnNext" class="addSkills skillsEdit edits btnListAdd">Add New</button>
+        <button id="btnNext" class="btnSkills btnEnter btnList">Next</button>
+        
+
+        <input type="text" class="caps lang list langEdit edits" placeholder="A language you know">
+        <input type="text" class="caps langLevel list langEdit edits" placeholder="The level you can speak">
+        <button id="btnNext" class="addLang btnListAdd langEdit edits">Add New</button>
+        <button id="btnNext" class="btnLang btnEnter btnList">Next</button>
+        
+
+        <input type="text" class="caps school list edits schoolEdit" placeholder="Your education and/or certificates">
+        <button id="btnNext" class="addSchool btnListAdd edits schoolEdit">Add New</button>
+        <button id="btnNext" class="btnSchool btnEnter btnList">Next</button>
+        
+
+        <input type="text" class="caps work list edits workEdit" placeholder="Your work experience">
+        <button id="btnNext" class="addWork btnListAdd edits workEdit">Add New</button>
+        <button id="btnNext" class="btnWork btnEnter btnList">Finish!</button>
+        
+
+        <button id="btnNext" class="btnDone edits btnEnter btnList">Finish!</button>
+        
+        <ul class="ulSkills skillsEdit edits prim"></ul>
+        <ul class="ulLang prim langEdit edits"></ul>
+        <ul class="ulSchool prim edits schoolEdit"></ul>
+        <ul class="ulWork prim edits workEdit"></ul>
+
+        <h2 class="msgAge">Are you sure that´s your age?</h2>
+        <h2 class="msgEmpty">This field can´t be empty!</h2>
+    </div>
+
+    <div class="cv">
+        <div class="row first-part">
+            <div class="main-cv hoverEffect col">
+                <h3 class="caps" id="name"></h3>
+                <h3 id="age"></h3>
+                <h3 id="email"></h3>
+                <h3 id="phone"></h3>
+                <h3 class="caps" id="city"></h3>
+            </div>
+    
+            <div class="skills-cv col">
+                <h4 class="skillsH4 hoverEffect">Skills and Knowledge</h4>
+                <ul class="ulSkills2 d-flex flex-wrap"></ul>
+            </div>
+        </div>
+        
+        <div class="row bio-cv">
+            <div class="col hoverEffect bioTwo">
+                <p id="bioEx" class="bioEx"></p>
+            </div>
+            <div class="col school-cv">
+                <h4 class="schoolH4 hoverEffect">Studies and Certificates</h4>
+                <ul class="ulSchool2"></ul>
+            </div>
+        </div>
+        
+        <div class="row last-cv">
+            <div class="col work-cv">
+                <h4 class="workH4 hoverEffect">Work Experience</h4>
+                <ul class="ulWork2"></ul>
+            </div> 
+            <div class="col lang-cv">
+                <h4 class="langH4 hoverEffect">Spoken Languages</h4>
+                <ul class="ulLang2"></ul>
+            </div>
+        </div>
+        
+
+        <button class="btnEnd btnPrint">Print!</button>
+        <button class="btnEnd reload">Start Over</button>
+        <h6 class="endText">By clicking on the bold text, you can edit what you selected.</h6>
+    </div>
+
+    <button class="btnDemo">Demo</button>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
