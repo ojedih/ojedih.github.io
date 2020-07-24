@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <script src="js/lib/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/f2dbef8b4b.js" crossorigin="anonymous"></script>
+
+
+    <title>Smart Ticket</title>
+</head>
+<body>
+    
+    <header>
+        <div class="title-div">
+            <h1 class="title">Smart Ticket</h1>
+        </div>
+    </header>
+
+    <div class="main">
+
+        <!-- First Part -->
+
+        <div class="form total-div">
+            <input type="number" class="total" name="total" autocomplete="off" required>
+            <label for="total" class="label-total">
+                <span class="content-total resp1">How much was your order?</span>
+            </label>
+        </div>
+
+        <div class="box-3">
+            <div class="btn btn-three btnNextFirst">
+              <span>NEXT</span>
+            </div>
+        </div>
+
+        <!-- Decimal Solution -->
+
+            <div class="decimalPart">
+                <p><span class="decH3"></span> contains decimals.</p>
+                <p>To simplify things you need to round either <span id="upSpan">up</span> or <span id="downSpan">down</span>.</p>
+            </div>
+
+        <!-- Second Part -->
+
+        <div class="form ticket-div">
+            <input type="number" class="ticket" name="ticket" autocomplete="off" required>
+            <label for="ticket" class="label-total">
+                <span class="content-total resp2">What is the value of your ticket?</span>
+            </label>
+        </div>
+
+        <div class="enter box-3">
+            <div class="btn btn-three btnCalc">
+              <span>CALCULATE</span>
+            </div>
+        </div>
+
+        <!-- Final Page -->
+
+        <div class="finalPart">
+            <p>To pay your bill you need <span class="spanFinal-1 spanFinal"></span> tickets of <span class="spanFinal-2 spanFinal"></span>€</p>
+
+            <p class="totalLeft"></p>
+        </div>
+
+            <div class="restart box-3">
+                <div class="btn btn-three btnRestart">
+                  <span>RESTART</span>
+                </div>
+            </div>
+
+        
+        
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
