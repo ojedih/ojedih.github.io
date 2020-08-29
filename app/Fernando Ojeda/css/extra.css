@@ -1,0 +1,106 @@
+body {
+    /* min-height: 100vh; */
+	font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+	color:white;
+	background-color: black;
+}
+
+.nav, .menu {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.nav {
+    position: relative;
+	/* background-color: #fff; */
+	margin: 1%;
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 50px;
+    overflow: hidden;
+    /* box-shadow: 0 8px 15px rgba(0,0,0,.2); */
+}
+
+.menu {
+    top: 10%;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ .menu {
+    width: 260px;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 300;
+	transition: 0.5s;
+}
+
+.menu li a:hover {
+    color: #c7c7c7;
+}
+
+.nav input {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.nav span {
+    position: absolute;
+    left: 25px;
+    width: 30px;
+    height: 2px;
+    border-radius: 50px;
+    background-color: white;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ span {
+    background-color: white;
+}
+
+.nav span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.nav input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+.nav span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+.nav input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
+
+
+/* Floating */
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+	margin-top: 5px;
+	text-align: center;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 5px); }
+    to   { transform: translate(0, -0px); }    
+}
