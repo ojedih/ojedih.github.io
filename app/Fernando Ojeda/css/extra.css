@@ -5,6 +5,8 @@ body {
 	background-color: black;
 }
 
+/* Navbar */
+
 .nav, .menu {
     display: flex;
     /* justify-content: center; */
@@ -97,6 +99,14 @@ body {
     animation-timing-function: ease-in-out;
 	margin-top: 5px;
 	text-align: center;
+}
+
+.floating img {
+	user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 @keyframes floating {
