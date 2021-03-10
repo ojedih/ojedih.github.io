@@ -249,3 +249,34 @@
 		width: 31%;
 	}
 }
+
+.madridMetro {
+	padding-top: 10px;
+	padding-bottom: 10%;
+	background-color: black;
+	text-align: center;
+	background-image: url("../images/madridMetro_bkg.png");
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.madridMetro h1 {
+	color: black;
+	font-size: 50px;
+	background-color:  rgba(255, 255, 255, 0.5);
+}
+
+.madridMetro img {
+	padding: 15px;
+}
+
+.madridMetro a {
+	color: white;
+	font-size: 30px;
+	display: block;
+	max-width: 15%;
+	margin-left: 43%;
+	margin-top: 5%;
+	text-align: center;
+	background-color: gray;
+
+}
