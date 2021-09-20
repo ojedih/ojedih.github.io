@@ -9,10 +9,11 @@ body {
 .bottom {
     /* width:100%; */
     position: relative;
-    margin: 0;
+    text-align: center;
 }
 
 .bottom img {
     max-width: 100%;
     position: absolute;
+    bottom: 0;
 }
